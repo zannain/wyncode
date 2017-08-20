@@ -1,0 +1,46 @@
+.content {
+    grid-area: content;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.mainheader {
+    grid-area: header
+}
+
+.mainfooter {
+    grid-area: footer;
+}
+
+.wrapper {
+    display: grid;
+    width: 90%;
+    margin: 0 auto 0 auto;
+    grid-template-columns: 9fr 40px 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header" "content . sidebar" "footer footer footer";
+}
+
+.content .primary {
+    grid-area: article-primary
+}
+
+;
+.content aside {
+    grid-area: article-secondary
+}
+
+;
+.content>h1 {
+    grid-area: chapterhead
+}
+
+;
+.content {
+    display: grid;
+    grid-template-columns: 9fr 40px 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: "chapterhead ..." "article-primary . article-secondary";
+}

@@ -1,0 +1,6 @@
+<h1>Url Shortener</h1>
+<%= form_for :url, url: urls_path do |f| %>
+<%= f.label :long_url %>
+<%= f.text_field :long_url %>
+<%= f.submit %>
+<% end %>

@@ -1,0 +1,17 @@
+<h1>Music Search Engine</h1>
+<%= form_tag site_search_path do %>
+  <%= search_field_tag :term %>
+  <%= submit_tag "Search the db!" %>
+  <% end %>
+
+<h2>Search Results</h2>
+<% if @results.empty? %>
+  <p>No results. Try searching again!</p>
+<% else %>
+  <% @results.each do |artist| %>
+  <p>
+    <strong><%= artist.class%>:</strong>
+    <%= link_to artist.name, artist %>
+  </p>
+  <% end %>
+<% end %>

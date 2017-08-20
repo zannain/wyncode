@@ -1,0 +1,11 @@
+<!-- <h2>Hello World</h2>
+<p id = 'notice'><%= :flash %></p>
+<%= form_tag '/students/99?name=A+A+Ron' do %>
+  <%= text_field_tag 'user[test]' %>
+  <%= submit_tag %>
+<% end %> -->
+
+<h2>Hello World</h2>
+<%= render @user %>
+<%= render partial: 'user', collection: @users %>
+Hello <%= user.name %>

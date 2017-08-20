@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        img {
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: auto !important;
+}
+body {
+    margin: 40px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 100px 10px 100px 10px 100px;
+    /* creates 3 columns that are 100px and adds space/gutters between them that are 10px  */
+    grid-template-rows: auto;
+    /* creates 2 rows that are auto so they will hold whatever you put in them, and the 10px add space/gutters between the two rows  */
+    float:right;
+}
+
+.a {
+    grid-row:1/2;
+    grid-column:1/2;
+}
+
+.b {
+    grid-row:1/2;
+    grid-column:3/4;
+}
+
+.c {
+    grid-row:3/4;
+    grid-column:1/2;
+}
+
+.d {
+    grid-row: 3/4;
+    grid-column: 3/4;
+}
+
+.e {
+    grid-row: 5/6;
+    grid-column:1/2;
+}
+
+.f {
+    grid-row:5/6;
+    grid-column:3/4;
+}
+    
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <img src="avatar.png" class="a">
+        <img src="avatar.png" class="b">
+        <img src="avatar.png" class="c">
+        <img src="avatar.png" class="d">
+        <img src="avatar.png" class="e">
+        <img src="avatar.png" class="f">
+    </div>
+</body>
+
+</html>
+
