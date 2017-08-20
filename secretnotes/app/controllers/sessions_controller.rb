@@ -1,5 +1,8 @@
 class SessionsController < ApplicationController
   def new
+    # root 'sessions#new'
+    # get 'sessions/new'
+    @user = User.new
   end
 
   def create
